@@ -1,0 +1,4 @@
+# Exclude trained model binaries (generated artifacts, not source code).
+# Metadata JSON files are tracked for visibility.
+*.joblib
+*.pt

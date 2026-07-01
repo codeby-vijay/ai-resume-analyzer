@@ -56,7 +56,6 @@ ai-resume-analyzer/
 │   │   └── utils/                 # PDF report generator
 │   ├── tests/                     # pytest API tests
 │   ├── requirements.txt
-│   ├── Dockerfile
 │   └── .env.example
 ├── frontend/
 │   ├── src/
@@ -65,8 +64,8 @@ ai-resume-analyzer/
 │   │   ├── context/                # AuthContext, ThemeContext
 │   │   └── api/client.js          # Axios instance with auto token refresh
 │   ├── package.json
-│   ├── Dockerfile
 │   └── nginx.conf
+├── Dockerfile                  # Combined multi-stage Dockerfile
 ├── docker-compose.yml
 ├── scripts/
 │   ├── setup.sh                   # local (non-Docker) dev setup
@@ -90,7 +89,7 @@ cp frontend/.env.example frontend/.env
 docker compose up --build
 ```
 
-- Frontend: http://localhost:5173
+- Frontend & Backend: http://localhost:8000
 - Backend API docs (Swagger): http://localhost:8000/docs
 - Postgres: localhost:5432
 

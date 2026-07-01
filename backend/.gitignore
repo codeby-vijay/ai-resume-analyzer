@@ -1,0 +1,8 @@
+.env
+*.db
+__pycache__/
+*.pyc
+firebase-service-account.json
+.pytest_cache/
+app/ml/saved_models/*.joblib
+app/ml/saved_models/*.pt

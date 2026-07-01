@@ -1,0 +1,40 @@
+{
+  "model_type": "GradientBoostingRegressor",
+  "feature_names": [
+    "skill_match_score",
+    "experience_match_score",
+    "education_match_score",
+    "keyword_density_score",
+    "formatting_score",
+    "semantic_similarity",
+    "resume_word_count",
+    "jd_word_count",
+    "length_ratio",
+    "skill_overlap_ratio",
+    "n_matched_skills",
+    "n_missing_skills",
+    "tech_soft_ratio"
+  ],
+  "n_features": 13,
+  "sklearn_version": "1.5.2",
+  "training_date": "2026-07-01T16:59:17.797216+00:00",
+  "training_rows": 2500,
+  "test_size": 500,
+  "metrics": {
+    "mae": 0.27496,
+    "rmse": 0.392995,
+    "r2": 0.999388
+  },
+  "all_candidates": {
+    "RandomForestRegressor": {
+      "mae": 0.546407,
+      "rmse": 0.737889,
+      "r2": 0.997843
+    },
+    "GradientBoostingRegressor": {
+      "mae": 0.27496,
+      "rmse": 0.392995,
+      "r2": 0.999388
+    }
+  }
+}
